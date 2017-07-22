@@ -2,6 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(["init", {
+        appId: "3e92e9cc-74bb-4129-b370-a8451e854db2",
+        autoRegister: false,
+        notifyButton: {
+          enable: true /* Set to false to hide */
+        }
+      }]);
+    </script>
     <title>Notifier</title>
   </head>
   <body>
